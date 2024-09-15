@@ -7,6 +7,15 @@ def test_calculate_addition():
 def test_calculate_division():
     assert calculate(8, 2, '/') == 4
 
+def test_calculate_angam():
+    assert calculate(8, 2, '*') == 16
+
+def test_calculate_minus():
+    assert calculate(8, 2, '-') == 6
+
+def test_calculate_stepen():
+    assert calculate(2, 4, "**") == 16
+
 def test_calculate_unknown_operation():
     assert calculate(5, 5, 'unknown') == "Неизвестная операция."
 
